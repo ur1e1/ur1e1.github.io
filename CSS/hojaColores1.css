@@ -1,12 +1,12 @@
-*{
+body{
     background: #E0E0E0;
     }
 
-h1{
-    background: #aeaeae;
+header{
+    background: #c8b900;
 }    
 
-h2{
+nav{
     background: #ffeb3b;
     } 
 
@@ -15,7 +15,7 @@ div{
 } 
 
 footer{
-    background: #aeaeae;
+    background: #ffeb3b;
 }
 
  
