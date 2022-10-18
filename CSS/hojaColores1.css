@@ -7,11 +7,17 @@ header{
 }    
 
 nav{
-    background: #fdd835;
+    background: #29434e;
+    text-align: center;
     } 
 
 div{
-    background:white    
+    background:white;
+    width:50%;
+    margin:auto;
+    padding: 5%;
+    border: 15px solid #546e7a;
+    overflow: auto;  
 } 
 
 footer{
@@ -19,6 +25,38 @@ footer{
 }
 
 h1{
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    width:1140px; 
+    margin:auto;
+}
+
+.texto_pie{
+    text-align: center;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.index_div{
+    height:400px; 
+    width:1600px; 
+}
+
+.index_button{
+    background-color: #fcd734;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.index_enlace{
+    text-decoration: none;
+    color: black;
+}
+
+.index_h1{
+    text-decoration: none;
     color: white;
 }
 
