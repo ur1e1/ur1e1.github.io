@@ -41,7 +41,8 @@ h1{
 
 .index_div{
     height:400px; 
-    width:1600px; 
+    width:80%; 
+    overflow: hidden;
 }
 
 .index_button{
