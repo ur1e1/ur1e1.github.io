@@ -8,12 +8,16 @@ header{
 
 nav{
     background: #29434e;
-    text-align: center;
     } 
 
-div{
+.botonera{
+        padding-left: 4%;
+        padding-bottom: 1%;
+    }
+
+.base{
     background:white;
-    width:50%;
+    width:100%;
     margin:auto;
     padding: 5%;
     border: 15px solid #546e7a;
@@ -30,7 +34,7 @@ h1{
     text-align: center;
     font-size: 55px;
     font-weight: bold;
-    width:1140px; 
+    width:100%; 
     margin:auto;
 }
 
@@ -46,6 +50,12 @@ h1{
     height:400px; 
     width:80%; 
     overflow: hidden;
+    background:white;
+    width:80%;
+    margin:auto;
+    padding: 5%;
+    border: 15px solid #546e7a;
+    overflow: auto;  
 }
 
 .index_button{
@@ -64,4 +74,3 @@ h1{
     color: white;
 }
 
- 
