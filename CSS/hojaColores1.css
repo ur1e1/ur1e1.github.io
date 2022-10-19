@@ -22,6 +22,7 @@ div{
 
 footer{
     background: #819ca9;
+    height:120px;
 }
 
 h1{
@@ -34,9 +35,11 @@ h1{
 }
 
 .texto_pie{
-    text-align: center;
+    text-align:unset;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     font-weight: bold;
+    padding-top: 50px;
+    text-align: center;
 }
 
 .index_div{
