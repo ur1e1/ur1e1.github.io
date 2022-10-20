@@ -8,27 +8,62 @@
     <!--Conexiones con repsiorios de Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Link fuente Silkscreen-->
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+    <!--Link fuente Playfair Display-->
+    <link href="https: //fonts.googleapis.com/css2? family= Playfair+Display:wght@600 & display=swap" rel="stylesheet">
     <!--Link fuente Caveat-->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
-    <!--Link fuente Butcherma-->
-    <link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand&display=swap" rel="stylesheet">
     <style>
-        h1,h2{
-            font-family: 'Silkscreen', cursive;
+        h1{
+            text-align: center;
+            font-size: 55px;
+            font-weight: bold;
+            width:1140px; 
+            margin:auto;
+            font-family: 'Playfair Display', serif;
+        }
+
+        h2{
+            font-family: 'Playfair Display', serif;
+            text-decoration: underline;
         }
 
         h3{
-            font-family: 'Butcherman', cursive;
+            font-family: 'Playfair Display', serif;
         }
 
         p{
-            font-family: 'Caveat', cursive;
+            font-family: 'Quicksand', sans-serif;
         }
 
         .fontRed{
             color: red;
+        }
+
+        .fontBlue{
+            color: blue;
+        }
+
+        td{
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .sin_lineas{
+            text-align: center;
+            border: hidden;
+        }
+
+        .trGris{
+            background-color: rgb(173, 169, 169);
+        }
+
+        div{
+            background-color: white;
+            width:50%;
+            margin:auto;
+            padding: 5%;
+            border: 15px solid #b6c3c9;
+            overflow: auto;
         }
 
     </style>
@@ -71,7 +106,54 @@
         <div>
             <h2>Compatibilidad del navegador con formatos de fuente</h2>
             <p>Los números de la tabla especifican la primera versión del navegador que es totalmente compatible con el formato de fuente.</p>
-            <table></table>
+            <table border="1" >
+                <th>Font format</th>
+                <th><img src="../../IMG/edge_browser_logo_icon_152998.png"></th>
+                <th><img src="../../IMG/google_chrome_new_logo_icon_159144.png"></th>
+                <th><img src="../../IMG/firefox_browser_logo_icon_152991.png"></th>
+                <th><img src="../../IMG/safari_icon-icons.com_75763.png"></th>
+                <th><img src="../../IMG/opera_browser_logo_icon_152972.png"></th>
+                <tr  class="trGris">
+                    <td>TTF/OTF</td>
+                    <td>9.0*</td>
+                    <td>4.0</td>
+                    <td>3.5</td>
+                    <td>3.1</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>WOFF</td>
+                    <td>9.0</td>
+                    <td>5.0</td>
+                    <td>3.6</td>
+                    <td>5.1</td>
+                    <td>11.1</td>
+                </tr>
+                <tr class="trGris">
+                    <td>WOFF2</td>
+                    <td>14.0</td>
+                    <td>36.0</td>
+                    <td>39.0</td>
+                    <td>10.0</td>
+                    <td>26.0</td>
+                </tr>
+                <tr>
+                    <td>SVG</td>
+                    <td><span class="fontRed">Not supported</span></td>
+                    <td><span class="fontRed">Not supported</span></td>
+                    <td><span class="fontRed">Not supported</span</td>
+                    <td>3.2</td>
+                    <td><span class="fontRed">Not supported</span></td>
+                </tr>
+                <tr class="trGris">
+                    <td>EOT</td>
+                    <td>6.0</td>
+                    <td><span class="fontRed">Not supported</span></td>
+                    <td><span class="fontRed">Not supported</span></td>
+                    <td><span class="fontRed">Not supported</span></td>
+                    <td><span class="fontRed">Not supported</span></td>
+                </tr>
+            </table>
             <p>*IE: el formato de fuente solo funciona cuando se configura como "instalable".</p>
         </div>
         <div>
@@ -84,12 +166,12 @@
                 propiedad:</p> 
             <code>
                 @font-face {<br>
-                    <span class="fontRed">font-family</span>: myFirstFont;<br>
-                    <span class="fontRed">src</span>: url(sansation_light.woff);<br>
+                    <span class="fontRed">font-family</span>: <span class="fontBlue">myFirstFont</span>;<br>
+                    <span class="fontRed">src</span>: <span class="fontBlue">url(sansation_light.woff)</span>;<br>
                   }<br>
                   <br>
                   div {<br>
-                    <span class="fontRed">font-family</span>: myFirstFont;<br>
+                    <span class="fontRed">font-family</span>: <span class="fontBlue">myFirstFont</span>;<br>
                   }<br>
             </code>       
         </div>
@@ -98,8 +180,8 @@
             <p>Debe agregar otra <span class="fontRed">@font-face</span> regla que contenga descriptores para el texto en negrita:</p>
             <code>
                 @font-face {<br>
-                    <span class="fontRed">font-family</span>: myFirstFont;<br>
-                    <span class="fontRed">src</span>: url(sansation_bold.woff);<br>
+                    <span class="fontRed">font-family</span>: <span class="fontBlue">myFirstFont</span>;<br>
+                    <span class="fontRed">src</span>: <span class="fontBlue">url(sansation_bold.woff)</span>;<br>
                     <span class="fontRed">font-weight</span>: bold;<br>
                   }<br>
             </code>
@@ -109,7 +191,61 @@
         </div>
         <div>
             <p>La siguiente tabla enumera todos los descriptores de fuentes que se pueden definir dentro de la <span class="fontRed">@font-face</span> regla:</p>
-            <table></table>
+            <table border="1">
+                <th class="sin_lineas">Descriptor</th>
+                <th class="sin_lineas">Values</th>
+                <th class="sin_lineas">Description</th>
+                <tr class="trGris sin_lineas">
+                    <td class="sin_lineas">font-family</td>
+                    <td class="sin_lineas">name</td>
+                    <td class="sin_lineas">Required. Defines a name for the font</td>
+                </tr>
+                <tr class="sin_lineas">
+                    <td class="sin_lineas">src</td>
+                    <td class="sin_lineas">URL</td>
+                    <td class="sin_lineas">Required. Defines the URL of the font file</td>
+                </tr>
+                <tr class="trGris sin_lineas">
+                    <td class="sin_lineas">font-stretch</td>
+                    <td class="sin_lineas">normal<br>
+                        condensed<br>
+                        ultra-condensed<br>
+                        extra-condensed<br>
+                        semi-condensed<br>
+                        expanded<br>
+                        semi-expanded<br>
+                        extra-expanded<br>
+                        ultra-expanded</td>
+                    <td class="sin_lineas">Optional. Defines how the font should be stretched. Default is "normal"</td>
+                </tr>
+                <tr class="sin_lineas">
+                    <td class="sin_lineas">font-style</td>
+                    <td class="sin_lineas">normal<br>
+                        italic<br>
+                        oblique</td>
+                    <td class="sin_lineas">Optional. Defines how the font should be styled. Default is "normal"</td>
+                </tr>
+                <tr class="trGris sin_lineas">
+                    <td class="sin_lineas">font-weight</td>
+                    <td class="sin_lineas">normal<br>
+                        bold<br>
+                        100<br>
+                        200<br>
+                        300<br>
+                        400<br>
+                        500<br>
+                        600<br>
+                        700<br>
+                        800<br>
+                        900</td>
+                    <td class="sin_lineas">Optional. Defines the boldness of the font. Default is "normal"</td>
+                </tr>
+                <tr class="sin_lineas">
+                    <td class="sin_lineas">unicode-range</td>
+                    <td class="sin_lineas">unicode-range</td>
+                    <td class="sin_lineas">Optional. Defines the range of UNICODE characters the font supports. Default is "U+0-10FFFF"</td>
+                </tr>
+            </table>
             <br>
         </div>
     </section>
