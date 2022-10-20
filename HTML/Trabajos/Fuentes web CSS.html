@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuentes web CSS</title>
+    <!--Conexiones con repsiorios de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Link fuente Silkscreen-->
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap" rel="stylesheet">
+    <!--Link fuente Caveat-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <!--Link fuente Butcherma-->
+    <link href="https://fonts.googleapis.com/css2?family=Butcherman&display=swap" rel="stylesheet">
+    <style>
+        h1,h2{
+            font-family: 'Silkscreen', cursive;
+        }
+
+        h3{
+            font-family: 'Butcherman', cursive;
+        }
+
+        p{
+            font-family: 'Caveat', cursive;
+        }
+
+        .fontRed{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u>Fuentes web CSS</u></h1>
+    </header>
+    <section>
+        <div>
+            <h2>La regla CSS @font-face</h2>
+            <p>Las fuentes web permiten a los diseñadores web usar fuentes que no están instaladas en la computadora del usuario.<br>
+                Cuando haya encontrado/comprado la fuente que desea usar, simplemente incluya el archivo de fuente en su servidor web y se descargará automáticamente al usuario cuando lo necesite.<br>
+                Sus fuentes "propias" se definen dentro de la <span class="fontRed">@font-face</span> regla CSS.</p>
+        </div>
+        <div>
+            <h2>Diferentes formatos de fuente</h2>
+            <h3>Fuentes Truetype (TTF)</h3>
+            <p>TrueType es un estándar de fuente desarrollado a fines de la década de 1980 por Apple y Microsoft. TrueType es el<br>
+               formato de fuente más común para los sistemas operativos Mac OS y Microsoft Windows.</p>
+            <h3>Fuentes OpenType (OTF)</h3> 
+            <p>OpenType es un formato para fuentes de computadora escalables. Fue construido en TrueType y es una marca<br>
+               registrada de Microsoft. Las fuentes OpenType se usan comúnmente hoy en día en las principales plataformas<br>
+               informáticas.</p>
+            <h3>El formato de fuente abierta web (WOFF)</h3>  
+            <p>WOFF es un formato de fuente para usar en páginas web. Fue desarrollado en 2009 y ahora es una recomendación<br>
+               del W3C. WOFF es esencialmente OpenType o TrueType con compresión y metadatos adicionales. El objetivo es<br>
+               admitir la distribución de fuentes desde un servidor a un cliente a través de una red con restricciones de ancho de<br>
+               banda.</p>  
+            <h3>El formato de fuente abierta web (WOFF 2.0)</h3>    
+            <p>Fuente TrueType/OpenType que proporciona una mejor compresión que WOFF 1.0.</p>
+            <h3>Fuentes SVG/Formas</h3>
+            <p>Las fuentes SVG permiten usar SVG como glifos al mostrar texto. La especificación SVG 1.1 define un módulo de<br>
+               fuente que permite la creación de fuentes dentro de un documento SVG. También puede aplicar CSS a documentos<br>
+               SVG y la regla @font-face se puede aplicar al texto en documentos SVG.</p>
+            <h3>Fuentes OpenType incrustadas (EOT)</h3>   
+            <p>Las fuentes EOT son una forma compacta de fuentes OpenType diseñadas por Microsoft para su uso como fuentes<br>
+               incrustadas en páginas web.</p>
+        </div>
+        <div>
+            <h2>Compatibilidad del navegador con formatos de fuente</h2>
+            <p>Los números de la tabla especifican la primera versión del navegador que es totalmente compatible con el formato de fuente.</p>
+            <table></table>
+            <p>*IE: el formato de fuente solo funciona cuando se configura como "instalable".</p>
+        </div>
+        <div>
+            <h2>Usando la fuente que quieras</h2>
+            <p>En la <span class="fontRed">@font-face</span> regla; primero defina un nombre para la fuente (por ejemplo, myFirstFont) y luego apunte al<br>
+               archivo de fuente.</p>
+            <p>Sugerencia: utilice siempre letras minúsculas para la URL de la fuente. Las letras mayúsculas pueden dar resultados<br>
+               inesperados en IE.</p>  
+            <p>Para usar la fuente para un elemento HTML, consulte el nombre de la fuente (myFirstFont) a través de la <span class="fontRed">font-family</span><br>
+                propiedad:</p> 
+            <code>
+                @font-face {<br>
+                    <span class="fontRed">font-family</span>: myFirstFont;<br>
+                    <span class="fontRed">src</span>: url(sansation_light.woff);<br>
+                  }<br>
+                  <br>
+                  div {<br>
+                    <span class="fontRed">font-family</span>: myFirstFont;<br>
+                  }<br>
+            </code>       
+        </div>
+        <div>
+            <h2>Uso de texto en negrita</h2>
+            <p>Debe agregar otra <span class="fontRed">@font-face</span> regla que contenga descriptores para el texto en negrita:</p>
+            <code>
+                @font-face {<br>
+                    <span class="fontRed">font-family</span>: myFirstFont;<br>
+                    <span class="fontRed">src</span>: url(sansation_bold.woff);<br>
+                    <span class="fontRed">font-weight</span>: bold;<br>
+                  }<br>
+            </code>
+            <p>El archivo "sansation_bold.woff" es otro archivo de fuente que contiene los caracteres en negrita para la fuente Sansation.<br>
+                Los navegadores usarán esto siempre que un fragmento de texto con la familia de fuentes "myFirstFont" deba mostrarse en negrita.<br>
+                De esta manera puedes tener muchas <span class="fontRed">@font-face</span> reglas para la misma fuente.</p><br>
+        </div>
+        <div>
+            <p>La siguiente tabla enumera todos los descriptores de fuentes que se pueden definir dentro de la <span class="fontRed">@font-face</span> regla:</p>
+            <table></table>
+            <br>
+        </div>
+    </section>
+</body>
+</html>
