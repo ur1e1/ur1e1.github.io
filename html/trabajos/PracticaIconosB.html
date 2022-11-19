@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica ejemplo iconos, repositorio iconos descargados</title>
+    <style>
+        @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(../../CSS/icons/fonts/MaterialIconsOutlined-Regular.otf); 
+        src: url(../../CSS/icons/fonts/MaterialIcons-Regular.ttf);
+        src: local('Material Icons'),
+             local('MaterialIcons-Regular'),
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+
+        body{
+            background-color: #546e7a;
+        }
+
+        h1{
+            background-color: #29434e;
+            color: white;
+        }
+
+        h2{
+            background-color: #819ca9;
+        }
+
+        .material-icons.md18{
+            font-size: 100px;
+        }
+
+        .material-icons.md19{
+            background-color: #fcd734;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practica de uso de iconos con fuentes descargadas localmente.</h1>
+    <h2>Url de interes</h2>
+        <p><a href="https://github.com/google/material-design-icons/tree/master/font">Repositorio Iconos gitHub</a></p>
+        <p><a href="https://fonts.google.com/icons">Iconos</a></p>
+    <h2>Ejemplo Icono simple</h2>
+        <span class="material-icons">token</span>
+    <h3>Boton</h3>
+        <u><h4>Codigo</h4></u>
+            <code>&lt;button&gt;&lt;span class="material-symbols-outlined"&gt;rocket_launch&lt;/span&gt;&lt;/button&gt;</code> <button><span class="material-icons">token</span></button>
+    <h2>Lista de Hipervinculos</h2>
+        <a href=""><span class="material-icons">rocket_launch</span></a><br>
+        <a href=""><span class="material-icons">recycling</span></a><br>
+        <a href=""><span class="material-icons">calendar_today</span></a><br>
+        <a href=""><span class="material-icons">account_balance</span></a>
+    <h2>Ejemplo Icono modificado tamaño</h2>
+        <span class="material-icons md18">token</span>
+    <h2>Ejemplo Icono modificado color</h2>
+        <span class="material-icons md19">token</span>
+</body>
+</html>
