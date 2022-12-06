@@ -8,8 +8,16 @@ body{
 
 #colornNav{
     background: #29434e;
-    } 
+    }
 
+#celdas{
+    background: #819ca9;
+    width:80%;
+    height:400%;
+    margin:auto;
+    border: 15px solid #546e7a;
+    border-width:8px;
+}
 
 #colorFooter{
     background: #29434e;
@@ -40,4 +48,15 @@ body{
     font-size:550%;
     padding-left: 40%;
     padding-top: 1%;
+}
+
+#titulo2{
+    font-family: serif;
+    font-weight: bold;
+    padding-left: 35%;
+    font-size:400%;
+}
+
+#icono{
+    padding-right: 250%;
 }
