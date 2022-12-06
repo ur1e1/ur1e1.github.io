@@ -1,0 +1,43 @@
+body{
+    background: #546e7a;
+    }
+
+#colorHeader{
+    background: #29434e;
+}    
+
+#colornNav{
+    background: #29434e;
+    } 
+
+
+#colorFooter{
+    background: #29434e;
+}
+
+#index_div{
+    height:900px; 
+    width:80%; 
+    background:#819ca9;
+    margin:auto;
+    padding: 4%;
+    border: 10px solid #546e7a;  
+}
+
+#color_TitulEncabezados{
+    color: #fcd734;
+    font-family: serif;
+}
+
+#centrar_texto{
+    padding-left: 6%;
+    padding-top: 1%;
+}
+
+#titulo{
+    font-family: serif;
+    font-weight: bold;
+    font-size:550%;
+    padding-left: 40%;
+    padding-top: 1%;
+}

@@ -5,31 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina web Uriel Raigón Parra interfaces</title>
-    <link rel="stylesheet" type="text/css" href="css\hojaColores1.css">
+     <!-- CSS  -->
+  <link href="css\hojaColores2.css" type="text/css" rel="stylesheet" >   
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./css/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
     <header>
-        <h1>Interfaces.</h1>
-        <nav>
-            <div class="botonera">
-                <button class="index_button"><a class="index_enlace" href="html/tema0.html">Introducción</a></button>
-                <button class="index_button"><a class="index_enlace" href="html/tema1.html">Planificación de interfaces gráficas</a></button>
-                <button class="index_button"><a class="index_enlace" href="html/tema2.html">Uso de etilos</a></button>
-                <button class="index_button"><a class="index_enlace" href="html/tema3.html">Implantación de contenido multimedia</a></button>
-                <button class="index_button"><a class="index_enlace" href="html/tema4.html">Diseño de webs accesibles</a></button>
-                <button class="index_button"><a class="index_enlace" href="html/tema5.html">Implementación de la usabilidad en la Web.Diseño amigable</a></button>
+        <nav class="nav-extended"  id="colorHeader">
+            <div class="nav-wrapper">
+              <a id="titulo" class="brand-logo white-text">Interfaces</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
-        </nav>
+            <div class="nav-content" id="centrar_texto">
+              <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active panel" href="html/tema0.html"><span id="color_TitulEncabezados">Introducción</span></a></li>
+                <li class="tab"><a class="active panel" href="html/tema1.html"><span id="color_TitulEncabezados">Planificación de interfaces gráficas</span></a></li>
+                <li class="tab"><a class="active panel" href="html/tema2.html"><span id="color_TitulEncabezados">Uso de etilos</span></a></li>
+                <li class="tab"><a class="active panel" href="html/tema3.html"><span id="color_TitulEncabezados">Implantación de contenido multimedia</span></a></li>
+                <li class="tab"><a class="active panel" href="html/tema4.html"><span id="color_TitulEncabezados">Diseño de webs accesibles</span></a></li>
+                <li class="tab"><a class="active panel" href="html/tema5.html"><span id="color_TitulEncabezados">Implementación de la usabilidad en la Web.Diseño amigable</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
     </header>
+
+    <main>
+        <div class="row" style="padding-top: 1%;">
+            <div class="col s12">
+                <div class="carousel carousel-slider">
+                    <a class="carousel-item"><img src="https://res.cloudinary.com/devdevil/image/upload/v1602581230/illunex_blog/2020-09-28-thumb.jpg" height="800px"></a>
+                    <a class="carousel-item"><img src="https://es-mx.learn.canva.com/wp-content/uploads/sites/11/2017/12/7-50-guias-de-estilo-1.jpg" height="800px"></a>
+                    <a class="carousel-item"><img src="https://borjaarandavaquero.com/wp-content/uploads/2021/07/que-es-html.jpg" height="800px"></a>
+                </div>
+            </div>
+        </div>
+    </main>
     
-    <section>
-        <!--Futura actualizacion-->
-        <div class="index_div"></div>
-    </section>
-    
-    <footer>
-        <p class="texto_pie">I.E.S. Ribera de Castilla / Uriel Raigón Parra.</p>
-    </footer>
-    
+    <footer class="page-footer" id="colorFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 id="color_TitulEncabezados">Página web Interfaces</h5>
+              <p class="grey-text text-lighten-4">Página web realizada para la asignatura de interfaces IES Ribera de Castilla</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 id="color_TitulEncabezados">Links</h5>
+              <ul>
+                <li><a href="https://materializecss.com/"><span class="white-text">Materialize</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2022 Copyright Text
+          <p class="grey-text text-lighten-4 right"><span id="color_TitulEncabezados">por</span> Uriel Raigón Parra</p>
+          </div>
+        </div>
+      </footer>
+
+     <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./css/js/materialize.js"></script>
+  <script src="./css/js/init.js"></script>
 </body>
 </html>
