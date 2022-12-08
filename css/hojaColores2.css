@@ -21,7 +21,7 @@ body{
 
 #celdas2{
     background: #819ca9;
-    width:97%;
+    width:99%;
     height:400%;
     margin:auto;
     border: 0;
@@ -63,14 +63,14 @@ body{
 #titulo2{
     font-family: serif;
     font-weight: bold;
-    padding-left: 35%;
+    padding-left: 30%;
     font-size:400%;
 }
 
 #titulo3{
     font-family: serif;
     font-weight: bold;
-    padding-left: 30%;
+    padding-left: 25%;
     font-size:300%;
 }
 
