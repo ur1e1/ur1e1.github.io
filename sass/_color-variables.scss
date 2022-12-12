@@ -1,0 +1,40 @@
+// Google Color Palette defined: http://www.google.com/design/spec/style/color.html
+
+$urpPrimary: (
+  "base": #546e7a,
+  "claro": #819ca9,
+  "oscuro": #29434e
+);
+
+$urpSecondary: (
+  "base": #fcd734,
+  "claro": #ffff6b,
+  "oscuro": #c5a600
+);
+
+$shades: (
+  "black":        #000000,
+  "white":        #FFFFFF,
+  "transparent":  transparent
+);
+
+$colors: (
+  "primary": $urpPrimary,
+  "secondary": $urpSecondary,
+  "shades": $shades
+) !default;
+
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{$color}` - `#{$type}` in $colors.";
+  @return null;
+}
