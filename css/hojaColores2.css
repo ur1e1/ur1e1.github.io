@@ -1,17 +1,4 @@
-body{
-    background: #546e7a;
-    }
-
-#colorHeader{
-    background: #29434e;
-}    
-
-#colornNav{
-    background: #29434e;
-    }
-
 #celdas{
-    background: #819ca9;
     width:80%;
     height:400%;
     margin:auto;
@@ -20,7 +7,6 @@ body{
 }
 
 #celdas2{
-    background: #819ca9;
     width:99%;
     height:400%;
     margin:auto;
@@ -29,21 +15,15 @@ body{
 }
 
 
-#colorFooter{
-    background: #29434e;
-}
-
 #index_div{
     height:900px; 
     width:80%; 
-    background:#819ca9;
     margin:auto;
     padding: 4%;
     border: 10px solid #546e7a;  
 }
 
-#color_TitulEncabezados{
-    color: #fcd734;
+#letra_TitulEncabezados{
     font-family: serif;
 }
 
