@@ -1,0 +1,69 @@
+body {
+  background-color: #4fc2f7;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body .cont_princ {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .cont_princ header {
+  background-color: #ff9800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+}
+body .cont_princ header .imagenCb {
+  max-width: 100px;
+  max-height: 100px;
+}
+body .cont_princ header .menu_nav {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+body .cont_princ header .menu_nav li {
+  margin: 0 0.5rem;
+}
+body .cont_princ main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+body .cont_princ main #sec_text {
+  flex-grow: 1;
+  margin-right: 1rem;
+  padding: 1.2rem;
+}
+body .cont_princ main #sec_text #enlac_1 {
+  color: yellow;
+}
+body .cont_princ main #sec_img {
+  background-color: #c66900;
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  padding: 1.5rem;
+}
+body .cont_princ main #sec_img .imagenMa1 {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+body .cont_princ main #sec_img .imagenMa2 {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+body .cont_princ footer {
+  background-color: #ffc947;
+  display: flex;
+  justify-content: flex-start;
+}
+body .cont_princ footer .enlac_f {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=estilo.css.map */
