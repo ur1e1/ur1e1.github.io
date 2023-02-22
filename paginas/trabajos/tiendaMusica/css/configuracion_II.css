@@ -193,6 +193,35 @@ footer .contenedor .pago .logos img {
     display: none;
   }
 }
+@media (max-width: 520px) {
+  main #mercha {
+    font-size: 32px;
+  }
+  .ofertas .tarjetaI {
+    width: 300px;
+  }
+  .ofertas .tarjetaI .cartIMG img {
+    width: 100%;
+    max-width: 300px;
+    height: 280px;
+    border-radius: 8px;
+  }
+  .ofertas .tarjetaI .cartTitul h3 {
+    font-size: 20px;
+  }
+  .ofertas .tarjetaI .cartParrf p {
+    font-size: 15px;
+  }
+  .ofertas .tarjetaI .cartBTN button {
+    margin: 10% 35%;
+    border-radius: 8px;
+    background-color: #F57C00;
+    border: 0;
+  }
+  .ofertas .tarjetaI .cartBTN button span {
+    padding: 10px 30px;
+  }
+}
 @media (max-width: 430px) {
   header .cabecera {
     align-items: center;
@@ -202,11 +231,11 @@ footer .contenedor .pago .logos img {
     width: 80px;
   }
   .ofertas .tarjetaI {
-    width: 350px;
+    width: 260px;
   }
   .ofertas .tarjetaI .cartIMG img {
     width: 100%;
-    max-width: 350px;
+    max-width: 260px;
     height: 280px;
     border-radius: 8px;
   }
@@ -230,6 +259,11 @@ footer .contenedor .pago .logos img {
   }
   footer .contacto .enlaces a {
     font-size: 15px;
+  }
+}
+@media (max-width: 390px) {
+  main #mercha {
+    font-size: 24px;
   }
 }
 

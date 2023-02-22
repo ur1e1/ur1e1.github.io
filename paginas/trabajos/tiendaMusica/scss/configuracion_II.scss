@@ -281,6 +281,57 @@ footer{
 
 }
 
+@media (max-width: 520px) {
+
+    main{
+        #mercha{
+            font-size: $H2;
+        }
+    }
+
+    .ofertas{
+        .tarjetaI{
+            width: 300px;
+    
+            .cartIMG{
+                img{
+                    width: 100%;
+                    max-width: 300px;
+                    height: 280px;
+                    border-radius: 8px;
+                }
+        
+            }
+
+            .cartTitul{
+                h3{
+                    font-size: $H4;
+                }
+            }
+
+            .cartParrf{
+                p{
+                font-size: 15px;
+                }
+            }  
+
+            .cartBTN{
+                button{
+                    margin: 10% 35%;
+                    border-radius: 8px;
+                    background-color: $primario;
+                    border: 0;
+    
+                    span{
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 
 @media (max-width: 430px) {
     header{
@@ -299,12 +350,12 @@ footer{
 
     .ofertas{
         .tarjetaI{
-            width: 350px;
+            width: 260px;
     
             .cartIMG{
                 img{
                     width: 100%;
-                    max-width: 350px;
+                    max-width: 260px;
                     height: 280px;
                     border-radius: 8px;
                 }
@@ -356,4 +407,11 @@ footer{
 
 }
 
+@media (max-width: 390px) {
+    main{
+        #mercha{
+            font-size: $H3;
+        }
+    }
 
+}
