@@ -110,10 +110,14 @@ footer #copyR{
 
 //Mediasquery
 @media (max-width:400px) {
-   #carrusel{
-    display: none;
-   }
-    
+    #carrusel{
+        display: none;
+       }
+        
+}
+
+@media (max-width:480px) {
+  
    #copyR{
         #fecha{
             display: none;

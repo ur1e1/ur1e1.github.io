@@ -41,9 +41,27 @@
         <div class="row">
           <div class="col xl12 m12 s12">
             <div class="carousel carousel-slider">
-              <a class="carousel-item responsive-img"><img src="img/useful-sass-scss-mixins-for-every-website.jpg" alt="img_sass"></a>
-              <a class="carousel-item responsive-img"><img src="img/maquetacion-web.jpg" alt="img_maquet"></a>
-              <a class="carousel-item responsive-img"><img src="img/1_2xsLeLNqKwIoGOQlw8O6Ug.png" alt="img_int"></a>
+              <a class="carousel-item responsive-img">
+                <picture>
+                  <source media="(min-width: 601px) and (max-width: 1300px)" srcset="./img/img_I_m.jpg">
+                  <source media="(max-width: 600px)" srcset="./img/img_I_s.jpg">
+                  <img src="./img/img_I_G.jpg" alt="img_sass">
+                </picture>
+              </a>
+              <a class="carousel-item responsive-img">
+                <picture>
+                  <source media="(min-width: 601px) and (max-width: 1300px)" srcset="./img/img_II_m.png">
+                  <source media="(max-width: 600px)" srcset="./img/img_II_s.png">
+                  <img src="./img/img_II_g.png" alt="img_maquet">
+                </picture>
+              </a>
+              <a class="carousel-item responsive-img">
+                <picture>
+                  <source media="(min-width: 601px) and (max-width: 1300px)" srcset="./img/img_III_m.jpg">
+                  <source media="(max-width: 600px)" srcset="./img/img_III_s.jpg">
+                  <img src="./img/img_III_g.jpg" alt="img_int">
+                </picture>
+              </a>
             </div>
           </div>
         </div>
