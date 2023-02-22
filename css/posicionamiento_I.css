@@ -1,0 +1,115 @@
+@import "https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Rajdhani&display=swap";
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Rajdhani", sans-serif;
+  background-color: #546e7a;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper .brand-logo {
+  margin-left: 5%;
+}
+
+#nav-mobile {
+  margin-right: 1%;
+}
+
+header .brand-logo {
+  font-family: "IM Fell Double Pica", serif;
+}
+
+.nav-wrapper {
+  background-color: #29434e;
+}
+
+#nav-mobile > li a {
+  color: #fcd734;
+}
+
+.sidenav {
+  background-color: #546e7a;
+}
+
+.sidenav > li a {
+  color: #fcd734;
+}
+
+#home_responsive i {
+  color: #fcd734;
+}
+
+#carrusel {
+  margin-top: 2%;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: 610px;
+}
+
+h1 {
+  color: #fcd734;
+  font-family: "IM Fell Double Pica", serif;
+  border: 2px solid #fcd734;
+  padding: 1%;
+}
+
+h2 {
+  color: #fcd734;
+  font-family: "IM Fell Double Pica", serif;
+}
+
+.contenedorClaro {
+  background-color: #819ca9;
+}
+
+.proyectoF {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.proyectoF a {
+  border: 2px solid #fcd734;
+  color: #fcd734;
+  font-family: "IM Fell Double Pica", serif;
+  font-size: 32px;
+  padding: 8px 4px;
+}
+
+footer #autor span {
+  margin-right: 5px;
+  color: #fcd734;
+}
+
+footer {
+  background-color: #29434e;
+}
+
+footer h5 {
+  font-family: "IM Fell Double Pica", serif;
+  color: #fcd734;
+}
+
+footer #copyR {
+  color: white;
+}
+
+@media (max-width: 400px) {
+  #carrusel {
+    display: none;
+  }
+  #copyR #fecha {
+    display: none;
+  }
+  .proyectoF a {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=posicionamiento_I.css.map */

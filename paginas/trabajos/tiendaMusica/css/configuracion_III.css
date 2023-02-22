@@ -1,0 +1,342 @@
+@import "https://fonts.googleapis.com/css2?family=Ultra&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap";
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #5D4037;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 18px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+header {
+  width: 100%;
+  position: static;
+}
+header .cabecera {
+  background-color: #BB4D00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 120px;
+}
+header .cabecera .menuHamburgusa {
+  display: none;
+}
+header .cabecera .menuHamburgusa a span {
+  background-color: #FFAD42;
+  color: black;
+  padding: 10px 10px;
+}
+header .cabecera .logo img {
+  height: 120px;
+  width: 120px;
+}
+header .cabecera .tituloCBC h1 {
+  font-family: "Ultra", serif;
+  font-size: 40px;
+}
+header .cabecera .botoneraTitul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .cabecera .botoneraTitul .buscador {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30px;
+  height: 40px;
+  background-color: white;
+}
+header .cabecera .botoneraTitul .buscador .buscadorI {
+  margin-right: 25px;
+  margin-left: 5px;
+}
+header .cabecera .botoneraTitul .buscador .buscadorII {
+  margin-right: 10px;
+}
+header .cabecera .botoneraTitul .botonInicio a {
+  background-color: #FFAD42;
+  border-radius: 4px;
+}
+header .cabecera .botoneraTitul .botonInicio a span {
+  color: black;
+  padding: 5px 8px;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F57C00;
+}
+.seccion h2 {
+  color: black;
+  font-family: "Ultra", serif;
+  font-size: 40px;
+}
+
+.ofertas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ofertas .tarjetaII {
+  display: block;
+  flex-direction: row;
+  width: 800px;
+  height: 600px;
+  border-radius: 8px;
+  margin: 2% 2%;
+  background-color: #FFAD42;
+}
+.ofertas .tarjetaII .cartTitulII h3 {
+  margin: 35px 25px;
+  font-family: "Ultra", serif;
+  font-size: 24px;
+}
+.ofertas .tarjetaII .cartIMGII {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ofertas .tarjetaII .cartIMGII img {
+  width: 750px;
+  height: 320px;
+  border-radius: 8px;
+}
+.ofertas .tarjetaII .cartParrfII p {
+  margin: 35px 35px;
+}
+.ofertas .tarjetaII .botoneraTarjeta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.ofertas .tarjetaII .botoneraTarjeta .cartBTNII button {
+  margin-right: 6px;
+  border-radius: 8px;
+  background-color: #F57C00;
+  border: 0;
+}
+.ofertas .tarjetaII .botoneraTarjeta .cartBTNII button span {
+  padding: 10px 40px;
+}
+.ofertas .tarjetaII .botoneraTarjeta .cartBTNinfo button {
+  margin-right: 14px;
+  border-radius: 8px;
+  background-color: #F57C00;
+  border: 0;
+}
+.ofertas .tarjetaII .botoneraTarjeta .cartBTNinfo button span {
+  padding: 10px 40px;
+}
+
+.pagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pagina a {
+  text-decoration: none;
+  color: white;
+  margin: 15px 10px;
+  font-size: 32px;
+}
+
+footer {
+  background-color: #BB4D00;
+}
+footer .contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 150px;
+}
+footer .contenedor .contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .contenedor .contacto .copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 15px;
+}
+footer .contenedor .contacto .copyright span {
+  margin-right: 5px;
+}
+footer .contenedor .contacto .enlaces a {
+  margin-right: 8px;
+  color: blue;
+}
+footer .contenedor .pago {
+  display: flex;
+  flex-direction: column;
+}
+footer .contenedor .pago h3 {
+  font-family: "Ultra", serif;
+  font-size: 20px;
+}
+footer .contenedor .pago .logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .contenedor .pago .logos img {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+@media (max-width: 775px) {
+  header .cabecera .botonInicio {
+    display: none;
+  }
+  header .cabecera .tituloCBC {
+    display: none;
+  }
+  header .cabecera .menuHamburgusa {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .ofertas .tarjetaII {
+    width: 800px;
+  }
+  .ofertas .tarjetaII .cartIMGII img {
+    width: 600px;
+    height: 280px;
+    border-radius: 8px;
+  }
+  .ofertas .tarjetaII .cartTitulII h3 {
+    font-size: 24px;
+  }
+  .ofertas .tarjetaII .cartParrfII p {
+    font-size: 18px;
+  }
+  .ofertas .tarjetaII .cartBTNII button {
+    margin: 10% 2%;
+    border-radius: 8px;
+    background-color: #F57C00;
+    border: 0;
+  }
+  .ofertas .tarjetaII .cartBTNII button span {
+    padding: 10px 25px;
+  }
+  .ofertas .tarjetaII .cartBTNinfo button {
+    margin: 10% 2%;
+    border-radius: 8px;
+    background-color: #F57C00;
+    border: 0;
+  }
+  .ofertas .tarjetaII .cartBTNinfo button span {
+    padding: 10px 25px;
+  }
+  footer .contenedor .pago {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  header .cabecera {
+    align-items: center;
+  }
+  header .cabecera .logo img {
+    height: 80px;
+    width: 80px;
+  }
+  .ofertas .tarjetaII {
+    width: 600px;
+  }
+  .ofertas .tarjetaII .cartIMGII img {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    border-radius: 8px;
+  }
+  .ofertas .tarjetaII .cartTitulII h3 {
+    font-size: 24px;
+  }
+  .ofertas .tarjetaII .cartParrfII p {
+    font-size: 18px;
+  }
+  .ofertas .tarjetaII .cartBTNII button {
+    margin: 10% 2%;
+    border-radius: 8px;
+    background-color: #F57C00;
+    border: 0;
+  }
+  .ofertas .tarjetaII .cartBTNII button span {
+    padding: 10px 25px;
+  }
+  .ofertas .tarjetaII .cartBTNinfo button {
+    margin: 10% 2%;
+    border-radius: 8px;
+    background-color: #F57C00;
+    border: 0;
+  }
+  .ofertas .tarjetaII .cartBTNinfo button span {
+    padding: 10px 25px;
+  }
+  footer .contacto .copyright p {
+    font-size: 1em;
+  }
+  footer .contacto .enlaces a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 520px) {
+  header .cabecera {
+    align-items: center;
+  }
+  .ofertas .tarjetaII {
+    width: 500px;
+  }
+  .ofertas .tarjetaII .cartIMGII img {
+    width: 350px;
+    height: 280px;
+    border-radius: 8px;
+  }
+  .ofertas .tarjetaII .cartTitulII h3 {
+    font-size: 20px;
+  }
+  .ofertas .tarjetaII .cartParrfII p {
+    font-size: 15px;
+  }
+  .ofertas .tarjetaII .botoneraTarjeta .cartBTNII button {
+    border: 0;
+    width: 80px;
+  }
+  .ofertas .tarjetaII .botoneraTarjeta .cartBTNII button span {
+    padding-left: 20px;
+  }
+  .ofertas .tarjetaII .botoneraTarjeta .cartBTNinfo button {
+    border: 0;
+    width: 80px;
+  }
+  .ofertas .tarjetaII .botoneraTarjeta .cartBTNinfo button span {
+    padding-left: 20px;
+  }
+  footer .contacto .copyright p {
+    font-size: 15px;
+  }
+  footer .contacto .enlaces a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 365px) {
+  .ofertas .tarjetaII .cartIMGII img {
+    width: 300px;
+    height: 280px;
+    border-radius: 8px;
+  }
+}
+
+/*# sourceMappingURL=configuracion_III.css.map */

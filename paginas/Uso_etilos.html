@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de estilos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="../css/posicionamiento_II.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabecera -->
+   <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo">Interfaces</a>
+                  <a id="home_responsive" class="sidenav-trigger" href="../index.html"><i class="material-icons">home</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html"><i class="material-icons">home</i></a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>  
+    </header>
+
+    <!-- Cuerpo -->
+    <main>
+        <div class="container">
+        <h1 class="center">Uso de estilos</h1>
+        <div id="celdas" style="border-radius: 15px;" class="contenedorClaro">
+            <h2 id="letra_TitulEncabezados" style="padding: 3%;" class="secondary-text">Plantillas de diseño</h2>
+                <ul class="collapsible" style="padding: 2%; border: 0;">
+                    <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons"></i>
+                        Documentación
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body">
+                        <ul class="collection with-header" style="padding: 1%; border: 0;">
+                            <li class="collection-item"><div>Bootstrap<a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>MaterializeCSS<a href="http://archives.materializecss.com/0.100.2/getting-started.html" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons"></i>
+                        Prácticas
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body">
+                        <ul class="collection with-header" style="padding: 1%; border: 0;">
+                            <li class="collection-item"><div>Pagina web album/carrusel modificada<a href="../plantillas/muestra/practicas/index.html" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>Pagina peluqueria<a href="../plantillas/parallax-template/index.html" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+        </div>
+
+        <div id="celdas" style="border-radius: 15px;" class="contenedorClaro">
+            <h2 id="letra_TitulEncabezados" style="padding: 3%;" class="secondary-text">Diseño Responsive</h2>
+                <ul class="collapsible" style="padding: 2%; border: 0;">
+                    <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons"></i>
+                        Documentación
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body">
+                        <ul class="collection with-header" style="padding: 1%; border: 0;">
+                            <li class="collection-item"><div>GitHub Responsive Web Design Fundamentals<a href="https://github.com/james-priest/udacity-nanodegree-mws/blob/master/docs/course-notes/responsive-web-design-fundamentals.md" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>Web.dev conceptos basicos responsive<a href="https://web.dev/responsive-web-design-basics/" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>Desarrolloweb.com<a href="https://desarrolloweb.com/manuales/responsive-web-design.html" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>W3schools CSS Flex<a href="https://www.w3schools.com/css/css3_flexbox_responsive.asp" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>W3schools media queries<a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>W3schools CSS media queries<a href="https://www.w3schools.com/css/css3_mediaqueries_ex.asp" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons"></i>
+                        Prácticas
+                        <span class="badge"></span></div>
+                    <div class="collapsible-body">
+                        <ul class="collection with-header" style="padding: 1%; border: 0;">
+                            <li class="collection-item"><div>Pagina web con diseño flex<a href="./trabajos/maquetar_flex/index.html" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                            <li class="collection-item"><div>Galeria responsive<a href="../paginas/trabajos/galeria_responsive/index.html" class="secondary-content"><i class="material-icons">double_arrow</i></a></div></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    </main>
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../java_script/acciones.js"></script>
+</body>
+</html>

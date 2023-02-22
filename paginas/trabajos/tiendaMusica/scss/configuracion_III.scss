@@ -1,0 +1,546 @@
+@import "colores";
+@import "fuentes";
+
+//General
+body{
+    padding: 0;
+    margin: 0;
+    background-color: $secundario;
+    font-family: $Parrafos;
+    font-size: $Cuerpo;
+}
+
+//Material-Icons
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+
+//Cabecera
+header{
+    width: 100%;
+    position: static;
+
+
+    .cabecera{
+        background-color: $primario_oscuro;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 120px;
+
+        .menuHamburgusa{
+            display: none;
+        
+            a{
+                span{      
+                    background-color: $primario_claro;
+                    color: black;
+                    padding: 10px 10px;
+                }
+            } 
+        }
+        
+        .logo{
+            img{
+                height: 120px;
+                width: 120px;
+            }
+        }
+
+        .tituloCBC{
+            h1{
+                font-family: $TitulosEncabezados;
+                font-size: $H1;
+            }
+        }
+
+        .botoneraTitul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .buscador{
+                border-radius: 8px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-right: 30px;
+                height: 40px;
+                background-color: $color_fuentePrimario;
+
+                .buscadorI{
+                    margin-right: 25px;
+                    margin-left: 5px;
+                }
+
+                .buscadorII{
+                    margin-right: 10px;
+                }
+            }
+
+            .botonInicio{
+                a{
+                    background-color: $primario_claro;
+                    border-radius: 4px;
+
+                    span{
+                        color: black;
+                        padding: 5px 8px;
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+
+
+//Cuerpo
+.seccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primario;
+
+    h2{
+        color: $color_fuenteSecundario;
+        font-family: $TitulosEncabezados;
+        font-size: $H1;
+    }
+}
+
+//Tarjetas
+.ofertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+    //Tarjeta_II
+    .tarjetaII{
+        display: block;
+        flex-direction: row;
+        width: 800px;
+        height: 600px;
+        border-radius: 8px;
+        margin: 2% 2%;
+        background-color: $primario_claro;
+
+        .cartTitulII{
+            h3{
+                margin: 35px 25px;
+                font-family: $TitulosEncabezados;
+                font-size: $H3;
+            }
+        }
+
+        .cartIMGII{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img{
+                width: 750px;
+                height: 320px;
+                border-radius: 8px;
+                
+            }
+        }
+
+        .cartParrfII{
+            p{
+                margin: 35px 35px;
+            }
+        }        
+
+        .botoneraTarjeta{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+           
+
+            .cartBTNII{
+                button{
+                    margin-right: 6px;
+                    border-radius: 8px;
+                    background-color: $primario;
+                    border: 0;
+
+                    span{
+                        padding: 10px 40px;
+                    }
+                }
+            }
+
+            .cartBTNinfo{
+                button{
+                    margin-right: 14px;
+                    border-radius: 8px;
+                    background-color: $primario;
+                    border: 0;
+
+                    span{
+                        padding: 10px 40px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        color: $color_fuentePrimario;
+        margin: 15px 10px; 
+        font-size: $H2;
+    }
+}
+
+//Footer
+footer{
+    background-color: $primario_oscuro;
+
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 150px;
+
+       
+            .contacto{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+        
+                .copyright{
+                    span{
+                        margin-right: 5px;
+                    }
+        
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-right: 15px;
+                }
+        
+                .enlaces{
+                    a{
+                        margin-right: 8px;
+                        color: blue;
+                    }
+                }
+            }
+        
+            .pago{
+                display: flex;
+                flex-direction: column;
+                
+        
+                h3{
+                    font-family: $TitulosEncabezados;
+                    font-size: $H4;
+                }
+        
+                .logos{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+        
+                    img{
+                        height: 40px;
+                        width: 40px;
+                        margin-right: 20px;
+                    }
+                }
+        
+            }
+        }
+}
+
+//Mediasquery
+@media (max-width: 775px) {
+    header{
+
+        .cabecera{
+
+            .botonInicio{
+                display: none;
+            }
+
+            .tituloCBC{
+                display: none;
+            }
+
+            .menuHamburgusa{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+        }
+    }    
+
+    .ofertas{
+        .tarjetaII{
+            width: 800px;
+    
+            .cartIMGII{
+                img{
+                    width: 600px;
+                    height: 280px;
+                    border-radius: 8px;
+                }
+        
+            }
+
+            .cartTitulII{
+                h3{
+                    font-size: $H3;
+                }
+            }
+
+            .cartParrfII{
+                p{
+                font-size: $Cuerpo;
+                }
+            }  
+
+            .cartBTNII{
+                button{
+                    margin: 10% 2%;
+                    border-radius: 8px;
+                    background-color: $primario;
+                    border: 0;
+    
+                    span{
+                        padding: 10px 25px;
+                    }
+                }
+            }
+
+            .cartBTNinfo{
+                button{
+                    margin: 10% 2%;
+                    border-radius: 8px;
+                    background-color: $primario;
+                    border: 0;
+    
+                    span{
+                        padding: 10px 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+
+        .contenedor{
+
+            .pago{
+                display: none;           
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width: 630px) {
+    header{
+        .cabecera{
+            align-items: center;
+
+            .logo{
+            
+                img{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    .ofertas{
+        .tarjetaII{
+            width: 600px;
+    
+            .cartIMGII{
+                img{
+                    width: 100%;
+                    max-width: 500px;
+                    height: 280px;
+                    border-radius: 8px;
+                }
+        
+            }
+
+            .cartTitulII{
+                h3{
+                    font-size: $H3;
+                }
+            }
+
+            .cartParrfII{
+                p{
+                font-size: $Cuerpo;
+                }
+            }  
+
+            .cartBTNII{
+                button{
+                    margin: 10% 2%;
+                    border-radius: 8px;
+                    background-color: $primario;
+                    border: 0;
+    
+                    span{
+                        padding: 10px 25px;
+                    }
+                }
+            }
+
+            .cartBTNinfo{
+                button{
+                    margin: 10% 2%;
+                    border-radius: 8px;
+                    background-color: $primario;
+                    border: 0;
+    
+                    span{
+                        padding: 10px 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .contacto{   
+            .copyright{
+                p{
+                    font-size: 1em;
+                }
+            }
+
+            .enlaces{
+                a{
+                    font-size: 15px;
+                }
+            }    
+        }
+    }
+
+}
+
+@media (max-width: 520px) {
+    header{
+        .cabecera{
+            align-items: center;
+
+        }
+    }
+
+    .ofertas{
+        .tarjetaII{
+            width: 500px;
+    
+            .cartIMGII{
+                img{
+                    width: 350px;
+                    height: 280px;
+                    border-radius: 8px;
+                }
+        
+            }
+
+            .cartTitulII{
+                h3{
+                    font-size: $H4;
+                }
+            }
+
+            .cartParrfII{
+                p{
+                font-size: 15px;
+                }
+            }  
+
+            .botoneraTarjeta{
+                .cartBTNII{
+                    button{
+                        border: 0;
+                        width: 80px;
+                        
+                        span{
+                            
+                            padding-left: 20px;
+                        }
+                    }
+                }
+
+                .cartBTNinfo{
+                    button{
+                        border: 0;
+                        width: 80px;
+
+                        span{
+                            
+                            padding-left: 20px;
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+    }
+
+    footer{
+        .contacto{   
+
+            .copyright{
+                p{
+                    font-size: 15px;
+                }
+            }
+
+            .enlaces{
+                a{
+                    font-size: 10px;
+                }
+            }    
+        }
+    }
+
+}
+
+@media (max-width: 365px) {
+    .ofertas{
+        .tarjetaII{
+           
+            .cartIMGII{
+                img{
+                    width: 300px;
+                    height: 280px;
+                    border-radius: 8px;
+                }
+        
+            }
+    }   }    
+}

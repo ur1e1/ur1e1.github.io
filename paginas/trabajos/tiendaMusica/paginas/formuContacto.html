@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario contacto</title>
+    <link href="../css/configuracion_formu.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="titul">
+            <h1>Formulario de contacto</h1>
+        </div>
+        
+        <a href="../index.html"><span class="material-symbols-outlined">home</span></a>
+    </header>
+    <main>
+        <form>
+            <label for="nomI">Escriba un nombre*</label><br>
+            <input type="text" id="nomI" placeholder="Nombre..."><br><br>
+            <label for="contrI">Escriba un correo*</label><br>
+            <input type="text" id="contrI" placeholder="Contraseña..."><br><br>
+            <label for="textoI">Escriba un mensaje*</label><br>
+            <textarea placeholder="Escribir mensaje..." id="textoI" rows="20" cols="85"></textarea><br><br>
+            <input type="submit" value="Enviar" class="botones">
+            <input type="reset" value="Borrar" class="botones">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>Los campos con asterisco son obligatorios*</p>
+    </footer>
+</body>
+</html>

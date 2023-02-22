@@ -4,80 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web Uriel Raigón Parra interfaces</title>
-     <!-- CSS  -->
-  <link href="css\hojaColores2.css" type="text/css" rel="stylesheet" >   
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./css/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="./css/materialize.css" type="text/css" rel="stylesheet">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="./css/posicionamiento_I.css" type="text/css" rel="stylesheet">
 </head>
-<body class="primary">
+<body>
 
-    <header>
-        <nav class="nav-extended primary oscuro">
-            <div class="nav-wrapper">
-              <a id="titulo" class="brand-logo white-text">Interfaces</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            </div>
-            <div class="nav-content" id="centrar_texto">
-              <ul class="tabs tabs-transparent">
-                <li class="tab"><a class="active panel" href="html/tema0.html"><span class="secondary-text" id="letra_TitulEncabezados">Introducción</span></a></li>
-                <li class="tab"><a class="active panel" href="html/tema1.html"><span class="secondary-text" id="letra_TitulEncabezados">Planificación de interfaces gráficas</span></a></li>
-                <li class="tab"><a class="active panel" href="html/tema2.html"><span class="secondary-text" id="letra_TitulEncabezados">Uso de etilos</span></a></li>
-                <li class="tab"><a class="active panel" href="html/tema3.html"><span class="secondary-text" id="letra_TitulEncabezados">Implantación de contenido multimedia</span></a></li>
-                <li class="tab"><a class="active panel" href="html/tema4.html"><span class="secondary-text" id="letra_TitulEncabezados">Diseño de webs accesibles</span></a></li>
-                <li class="tab"><a class="active panel" href="html/tema5.html"><span class="secondary-text" id="letra_TitulEncabezados">Implementación de la usabilidad en la Web.Diseño amigable</span></a></li>
-              </ul>
-            </div>
-          </nav>
-        
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-    </header>
-
-    <main>
-        <div class="row" style="padding-top: 1%;">
-            <div class="col s12">
-    </header>
-                <div class="carousel carousel-slider">
-                    <a class="carousel-item"><img src="https://res.cloudinary.com/devdevil/image/upload/v1602581230/illunex_blog/2020-09-28-thumb.jpg" height="800px"></a>
-                    <a class="carousel-item"><img src="https://es-mx.learn.canva.com/wp-content/uploads/sites/11/2017/12/7-50-guias-de-estilo-1.jpg" height="800px"></a>
-                    <a class="carousel-item"><img src="https://borjaarandavaquero.com/wp-content/uploads/2021/07/que-es-html.jpg" height="800px"></a>
-                </div>
-            </div>
+    <!-- Cabecera -->
+  <header>
+    <nav>
+        <div class="nav-wrapper">
+            <a class="brand-logo">Interfaces</a>
+            <a data-target="menu_responsive" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="paginas/Introducción.html">Introducción</a></li>
+              <li><a href="paginas/Planificación_interfaces.html">Planificación de interfaces gráficas</a></li>
+              <li><a href="paginas/Uso_etilos.html">Uso de etilos</a></li>
+              <li><a href="paginas/Implantación_multimedia.html">Implantación de contenido multimedia</a></li>
+            </ul>
         </div>
-    </main>
-    
-    <footer class="page-footer primary oscuro">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="secondary-text" id="letra_TitulEncabezados">Página web Interfaces</h5>
-              <p class="grey-text text-lighten-4">Página web realizada para la asignatura de interfaces IES Ribera de Castilla</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="secondary-text" id="letra_TitulEncabezados">Links</h5>
-              <ul>
-                <li><a href="https://materializecss.com/"><span class="white-text">Materialize</span></a></li>
-              </ul>
+      </nav>    
+  </header>
+    <!-- Lista menu responsive -->
+    <ul id="menu_responsive" class="sidenav">
+      <li><a href="paginas/Introducción.html">Introducción</a></li>
+      <li><a href="paginas/Planificación_interfaces.html">Planificación de interfaces gráficas</a></li>
+      <li><a href="paginas/Uso_etilos.html">Uso de etilos</a></li>
+      <li><a href="paginas/Implantación_multimedia.html">Implantación de contenido multimedia</a></li>
+    </ul>
+
+  <!-- Cuerpo -->
+  <main>
+
+      <div class="container" id="carrusel">
+        <div class="row">
+          <div class="col xl12 m12 s12">
+            <div class="carousel carousel-slider">
+              <a class="carousel-item responsive-img"><img src="img/useful-sass-scss-mixins-for-every-website.jpg" alt="img_sass"></a>
+              <a class="carousel-item responsive-img"><img src="img/maquetacion-web.jpg" alt="img_maquet"></a>
+              <a class="carousel-item responsive-img"><img src="img/1_2xsLeLNqKwIoGOQlw8O6Ug.png" alt="img_int"></a>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-          © 2022 Copyright Text
-          <p class="grey-text text-lighten-4 right"><span class="secondary-text" id="letra_TitulEncabezados">por</span> Uriel Raigón Parra</p>
+      </div>
+
+      <div class="proyectoF">
+        <a href="./paginas/tiendaMusica.html">Proyecto web tienda de música</a>
+      </div>
+
+  </main>
+
+  <!-- Pie -->
+  <footer>
+    <div class="container">
+    <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>Página web Interfaces</h5>
+            <p class="grey-text text-lighten-4">Página web para la asignatura de interfaces IES Ribera de Castilla</p>
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="footer-copyright">
+        <div class="container" id="copyR">
+        <span id="fecha">© 2023 Copyright Text</span>
+        <p class="text-lighten-4 right" id="autor"><span>por</span>Uriel Raigón Parra</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-     <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="./css/js/materialize.js"></script>
-  <script src="./css/js/init.js"></script>
+<!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="java_script/acciones.js"></script>
 </body>
 </html>

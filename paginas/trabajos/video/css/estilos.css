@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Yuji Boku", serif;
+}
+
+.principal {
+  border: 2px solid black;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 700px;
+  height: 700px;
+  background-color: aqua;
+}
+
+header {
+  background-color: blue;
+  text-align: center;
+  padding: 0.6rem 2rem;
+}
+
+main {
+  margin: 15% 15%;
+}
+
+main .botonera {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.video {
+  max-width: 100%;
+  width: 35%;
+  height: 35%;
+}
+
+.botonera button {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+#play {
+  background-color: green;
+}
+
+#stop {
+  background-color: red;
+}
+
+#pause {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=estilos.css.map */

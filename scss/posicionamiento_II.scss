@@ -1,0 +1,107 @@
+@import "colores";
+@import "fuentes";
+
+//General
+body{
+  font-family: $fuente_parrafos;
+  background-color: $color_primario; 
+}
+
+//Cabecera
+header .brand-logo{
+  font-family: $fuente_titulosEnunciados;
+}
+
+.nav-wrapper{
+  background-color: $color_primarioOscuro;
+}
+
+.nav-wrapper .brand-logo{
+  margin-left: 5%;
+}
+
+#nav-mobile{
+  margin-right: 1%;
+}
+
+#nav-mobile >li a{
+  color:$color_secundario;
+}
+
+.sidenav{
+  background-color: $color_primario;
+}
+
+.sidenav >li a{
+  color: $color_secundario;
+}
+
+#home_responsive i{
+  color: $color_secundario;
+}
+
+
+
+//Cuerpo
+h1{
+  color:$color_secundario;
+  font-family: $fuente_titulosEnunciados;
+  border: 2px solid $color_secundario;
+  padding: 1%;
+}
+
+h2{
+  color:$color_secundario;
+  font-family: $fuente_titulosEnunciados;
+}
+
+.contenedorClaro{
+  background-color: $color_primarioClaro;
+}
+
+.contenedorClaro h2{
+  padding-top: 2%;
+  margin-left: 2%;
+}
+
+ul >li a{
+    margin-left: 15rem;
+    
+}
+
+#juntarPDF >i{
+  margin-left: calc(var(--Variable) * -2)
+}
+
+//Pie
+footer{
+  background-color: $color_primarioOscuro;
+}
+
+footer h5{
+  font-family: $fuente_titulosEnunciados;
+  color: $color_secundario;
+}
+
+footer #copyR{
+  color:$color_textSecundario
+}
+
+footer #autor span{
+  color: $color_secundario;
+}
+
+
+
+//Mediasquery
+@media screen and (max-width:320px) {
+  h1, h2{
+    font-size:x-large;
+  }
+
+  ul >li{
+    width: auto;
+    height: 120px;
+  }
+}
+
