@@ -10,42 +10,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <header>
-
-        <!-- Cabecera -->
-        <div class="cabecera">
-          <!-- Boton Hamburguesa -->
-          <div class="menuHamburgusa">
-            <a href="#" class="dropdown-trigger" data-target="dr"><span class="material-symbols-outlined">menu</span></a>
+  <header>
+    <!-- Barra Cabecera -->
+    <div class="cabecera">
+      <!-- Boton Hamburguesa -->
+      <div class="menuHamburgusa">
+        <a href="#" class="dropdown-trigger" data-target="dr"><span class="material-symbols-outlined">menu</span></a>
+      </div>
+      <div class="logo">
+          <a href="../index.html"><img src="../img/kisspng-phonograph-record-lp-record-vinyl-group-album-vinyl-5ad71d6f76a1d8.8257637015240472154859.png" alt="logotipo tienda"></a>
+      </div>
+      <div class="tituloCBC">
+        <h1>Eventos</h1>
+      </div>
+      <div class="botoneraTitul">
+        <div class="buscador">
+          <div class="buscadorI">
+            <p>Buscar...</p>
           </div>
-          <div class="logo">
-              <a href="../index.html"><img src="../img/kisspng-phonograph-record-lp-record-vinyl-group-album-vinyl-5ad71d6f76a1d8.8257637015240472154859.png" alt="logotipo tienda"></a>
-          </div>
-          <div class="tituloCBC">
-            <h1>Discos Ribera</h1>
-          </div>
-          <div class="botoneraTitul">
-            <div class="buscador">
-              <div class="buscadorI">
-                <p>Buscar...</p>
-              </div>
-              <div class="buscadorII">
-                <span class="material-symbols-outlined">search</span>
-              </div>
-            </div>
-            <div class="botonInicio">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><span class="material-symbols-outlined">group</span></a>
+          <div class="buscadorII">
+            <span class="material-symbols-outlined">search</span>
           </div>
         </div>
+        <div class="botonInicio">
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><span class="material-symbols-outlined">group</span></a>
+        </div>
+      </div>
+    </div>
 
-        <!-- Contenido Menu Hamburguesa -->
-        <ul id="dr" class="dropdown-content">
-          <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Iniciar sesión</a></li>
-          <li><a href="../paginas/discos.html">Discos</a></li>
-          <li><a href="../paginas/merchandising.html">Merchandising</a></li>
-        </ul>
-    
-      </header>
+    <!-- Contenido Menu Hamburguesa -->
+    <ul id="dr" class="dropdown-content">
+      <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Iniciar sesión</a></li>
+      <li><a href="../paginas/discos.html">Discos</a></li>
+      <li><a href="../paginas/merchandising.html">Merchandising</a></li>
+      <li><a href="../paginas/eventos.html">Eventos</a></li>
+    </ul>
+
+    <!-- Barra Navegacion -->
+    <div class="navegacion">
+      <h3><a href="../paginas/discos.html">Discos</a></h3>
+      <h3><a href="../paginas/merchandising.html">Merchandising</a></h3>
+      <h3><a href="../paginas/eventos.html">Eventos</a></h3>
+    </div>
+
+ <!-- Modal -->
+ <div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Iniciar sesión</h4>
+    <form>
+      <label for="nom">Introduzca su usuario:</label><br>
+      <input type="text" id="nom" placeholder="Usuario..."><br><br>
+      <label for="contra">Introduzca su contraseña:</label><br>
+      <input type="password" id="contra" placeholder="Contraseña..."><br><br>
+      <input type="submit" value="Iniciar">
+      <input type="reset" value="Borrar">
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat"><span class="material-symbols-outlined">close</span></a>
+  </div>
+</div>
+
+    <div class="seccion">
+      <h2>Eventos</h2>
+    </div>
+  </header>
     
      <!-- Modal -->
      <div id="modal1" class="modal">
@@ -67,9 +96,6 @@
     
     <!-- Cuerpo -->
       <main>
-        <div class="seccion">
-          <h2>Eventos</h2>
-        </div>
     
         <!-- Tarjetas ofertas -->
         <div class="ofertas">

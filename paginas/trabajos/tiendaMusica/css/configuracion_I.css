@@ -89,7 +89,8 @@ header .navegacion h3 a {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 0;
-  height: 0;
+  height: 100px;
+  width: 100%;
   overflow: hidden;
 }
 

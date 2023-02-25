@@ -15,6 +15,7 @@ body {
 header {
   width: 100%;
   position: static;
+  z-index: 100;
 }
 header .cabecera {
   background-color: #BB4D00;
@@ -68,9 +69,24 @@ header .cabecera .botoneraTitul .botonInicio a span {
   color: black;
   padding: 5px 8px;
 }
+header .navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 70px;
+  background-color: #F57C00;
+}
+header .navegacion h3 a {
+  font-family: "Ultra", serif;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
 
 .seccion {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   background-color: #F57C00;
@@ -189,6 +205,12 @@ footer .contenedor .pago .logos img {
     align-items: center;
     flex-direction: row;
   }
+  header .navegacion {
+    display: none;
+  }
+  header .seccion {
+    display: flex;
+  }
   footer .contenedor .pago {
     display: none;
   }
@@ -230,6 +252,9 @@ footer .contenedor .pago .logos img {
     height: 80px;
     width: 80px;
   }
+  #mercha {
+    font-size: 24px;
+  }
   .ofertas .tarjetaI {
     width: 260px;
   }
@@ -259,11 +284,6 @@ footer .contenedor .pago .logos img {
   }
   footer .contacto .enlaces a {
     font-size: 15px;
-  }
-}
-@media (max-width: 390px) {
-  main #mercha {
-    font-size: 24px;
   }
 }
 
