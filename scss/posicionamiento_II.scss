@@ -5,6 +5,13 @@
 body{
   font-family: $fuente_parrafos;
   background-color: $color_primario; 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 //Cabecera
@@ -14,6 +21,10 @@ header .brand-logo{
 
 .nav-wrapper{
   background-color: $color_primarioOscuro;
+}
+
+#casa{
+  color: $color_secundario;
 }
 
 .nav-wrapper .brand-logo{
@@ -64,10 +75,7 @@ h2{
   margin-left: 2%;
 }
 
-ul >li a{
-    margin-left: 15rem;
-    
-}
+
 
 #juntarPDF >i{
   margin-left: calc(var(--Variable) * -2)

@@ -3,6 +3,13 @@
 body {
   font-family: "Rajdhani", sans-serif;
   background-color: #546e7a;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 header .brand-logo {
@@ -11,6 +18,10 @@ header .brand-logo {
 
 .nav-wrapper {
   background-color: #29434e;
+}
+
+#casa {
+  color: #fcd734;
 }
 
 .nav-wrapper .brand-logo {
@@ -56,10 +67,6 @@ h2 {
 .contenedorClaro h2 {
   padding-top: 2%;
   margin-left: 2%;
-}
-
-ul > li a {
-  margin-left: 15rem;
 }
 
 #juntarPDF > i {
